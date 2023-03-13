@@ -22,7 +22,7 @@ const { title } = Astro.props;
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Righteous&display=swap" rel="stylesheet"> 
 
-  	<title>NewTaber</title>
+  	<title>{title} | NewTaber</title>
 
 		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
 		<meta name="generator" content={Astro.generator} />
@@ -38,10 +38,6 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	footer .bg-black {
-		background-color: white;
-		color: black;
-	}
 
 	/* :root {
 		--accent: 124, 58, 237;
